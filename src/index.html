@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Remittance Payment dApp</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center my-4">Remittance Payment dApp</h1>
+    
+    <div class="card">
+      <div class="card-header">
+        <h2>Send Payment</h2>
+      </div>
+      <div class="card-body">
+        <div class="form-group">
+          <label for="recipient">Recipient Address:</label>
+          <input type="text" id="recipient" class="form-control" placeholder="Enter recipient address">
+        </div>
+        <div class="form-group">
+          <label for="paymentId">Payment ID:</label>
+          <input type="text" id="paymentId" class="form-control" placeholder="Enter payment ID">
+        </div>
+        <div class="form-group">
+          <label for="currency">Currency:</label>
+          <input type="text" id="currency" class="form-control" placeholder="Enter currency">
+        </div>
+        <div class="form-group">
+          <label for="amount">Amount:</label>
+          <input type="number" id="amount" class="form-control" placeholder="Enter amount">
+        </div>
+        <button onclick="sendPayment()" class="btn btn-primary">Send Payment</button>
+      </div>
+    </div>
+    
+    <div class="card mt-4">
+      <div class="card-header">
+        <h2>Claim Payment</h2>
+      </div>
+      <div class="card-body">
+        <div class="form-group">
+          <label for="claimPaymentId">Payment ID:</label>
+          <input type="text" id="claimPaymentId" class="form-control" placeholder="Enter payment ID">
+        </div>
+        <button onclick="claimPayment()" class="btn btn-success">Claim Payment</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

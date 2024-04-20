@@ -46,6 +46,7 @@
 // const HDWalletProvider = require('@truffle/hdwallet-provider');
 
 module.exports = {
+  contracts_build_directory: './src/build',
   /**
    * Networks define how you connect to your Ethereum client and let you set the
    * defaults web3 uses to send transactions. If you don't specify one, Truffle
